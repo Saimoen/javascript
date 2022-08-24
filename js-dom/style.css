@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+p {
+  text-align: center;
+}
+
+/* Cours */
+
+.chap1 {
+  text-align: center;
+  font-size: 20px;
+  background: burlywood;
+  border: black solid 2px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+}
+
+.chap2 {
+  text-align: center;
+  font-size: 20px;
+  background: rgb(247, 149, 22);
+  border: black solid 2px;
+  border-radius: 20px;
+}
+
+.chap3 {
+  border: black solid 2px;
+  border-radius: 20px;
+  background: beige;
+}
+.chap4 {
+  border: black solid 2px;
+  border-radius: 20px;
+  background: beige;
+}
+.chap5 {
+  border: black solid 2px;
+  border-radius: 20px;
+  background: beige;
+}
+
+/*** exemple du clique ***/
+.box {
+  transition: 0.25s ease;
+  padding: 10px;
+  text-align: center;
+}
+.exemple {
+  visibility: hidden;
+  font-size: medium;
+  width: 240px;
+  margin: 10px auto 0;
+}
+.show-response {
+  visibility: visible;
+  transition: 0.6s ease;
+}
+.question-clicked {
+  border-radius: 20px;
+  background: burlywood;
+}
+/*** Exemple du MOUSEMOVE ***/
+.mouse {
+  border-radius: 20px;
+  border: black solid 2px;
+}
+.mousemove {
+  height: 50px;
+  width: 50px;
+  border: 2px solid pink;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  transition: 0.3s ease;
+  z-index: -1;
+}
+/*** Exemple du keyPress ***/
+.kP {
+  background: rgb(197, 196, 196);
+  border-radius: 20px;
+  border: grey solid 2px;
+}
+
+.keypress {
+  text-align: center;
+}
+/*** Exemple du navbar ***/
+nav {
+  background: pink;
+  position: fixed;
+  width: 100%;
+  height: 7%;
+  top: 0;
+  transition: 0.3s ease;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+}
+/*** Scroll-Event ***/
+.scrollEvent {
+  border: black solid 2px;
+  border-radius: 20px;
+  background: blanchedalmond;
+}

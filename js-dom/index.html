@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours Javascript</title>
+    <link rel="shortcut icon" href="/icon-js.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="chap1">
+        <h1>I. Qu'est ce que le DOM ?</h1>
+        <p>
+          Définition: Le "Document Object Model" est une interface de
+          programmation qui permet à des scripts de modifier le contenu du
+          navigateur web.
+        </p>
+        <img src="/dom.png" alt="dom.png" width="350px" height="350px" />
+      </div>
+    </section>
+    <section class="chap2">
+      <div>
+        <h1>II. querySelector</h1>
+        <p>
+          "document.querySelector('')" entre parenthèse ajouter la balise visée,
+          <br />
+          On stockera cette méthode dans une variable afin de la manipuler.
+        </p>
+      </div>
+    </section>
+    <section class="chap3">
+      <h1>III. Click Event</h1>
+      <p>
+        Pour intéragir avec un clique sur la page web, il faut ajouter un event
+        avec la méthode "addEventListener" comme suit: <br />
+        "const.addEventListener('click' () => { la réponse } );"
+      </p>
+      <p>
+        Avec "addEventListener" nous avons aussi vu que nous pouvions changer de
+        style, en ajoutant un style lors de l'évènement exemple:
+        btn1.addEventListener("click", () => {
+        response.classList.add('show-response') response.style.background =
+        "green"; });
+      </p>
+      <section>
+        <div class="click-event box">
+          <h4>Quelle est la capitale de l'Espagne?</h4>
+          <button id="btn-1">Madrid</button>
+          <button id="btn-2">Barcelone</button>
+          <p class="exemple">La bonne réponse est Madrid</p>
+        </div>
+      </section>
+    </section>
+    <section class="mouse">
+      <h1>IV. Mouse Event</h1>
+      <p>
+        <strong>Suivi de la souris:</strong> <br />
+        window.addEventListener("mousemove", (e) => { mousemove.style.left =
+        e.pageX + "px"; mousemove.style.top = e.pageY + "px"; });
+        <br />
+        <strong>Presse de la souris:</strong> <br />
+        window.addEventListener("mousedown", () => { mousemove.style.height =
+        '100px'; }); <br />
+
+        <strong>Relache la pression de la souris:</strong> <br />
+        window.addEventListener("mouseup", () => { mousemove.style.width =
+        '100px'; }); <br />
+
+        <strong>Souris qui passe dans la partie selectionnée:</strong> <br />
+        chapitre1.addEventListener("mouseenter", () => {
+        chapitre1.style.background = 'blue'; }); <br />
+
+        <strong>Souris qui sort de la partie selectionnée</strong> <br />
+        chapitre1.addEventListener("mouseout", () => {
+        chapitre1.style.background = 'pink'; }); <br />
+
+        <strong>Souris qui passe sur la partie selectionnée:</strong> <br />
+        chapitre2.addEventListener("mouseover", () => {
+        chapitre2.style.transform = 'rotate(2deg)'; });
+      </p>
+    </section>
+
+    <section>
+      <div class="mousemove"></div>
+    </section>
+
+    <section class="kP">
+      <h1>V. keyPress</h1>
+      <p>
+        <strong>Pour afficher les touches auxquelles on appuie:</strong> <br />
+        document.addEventListener('keypress', (e) => { key.textContent = e.key;
+        });
+      </p>
+      <div class="keypress">
+        <h2>Vous appuyez sur la touche : <span id="key"></span></h2>
+      </div>
+    </section>
+
+    <nav>
+      <ul>
+        <li>Accueil</li>
+        <li>Formation</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <section class="scrollEvent">
+      <h1>VI. ScrollEvent</h1>
+      <p>
+        <strong>Pour qu'une navbar se cache:</strong> <br />
+        window.addEventListener('scroll', () => { if (window.scrollY > 120){
+        scroll.style.top = 0; } else { scroll.style.top = "-50px"; } });
+      </p>
+    </section>
+
+    <section class="chap4">
+      <h1>VII. Form-event</h1>
+
+      <form action="" class="box">
+        <input type="text" placeholder="Entrez votre Nom" />
+
+        <select>
+          <option value="">Sélectionner votre destination de rêve</option>
+          <option value="Bali">Bali</option>
+          <option value="Mykonos">Mykonos</option>
+          <option value="Los Angeles">Los Angeles</option>
+        </select>
+
+        <input type="checkbox" id="cgv" />
+        <label for="cgv">Accepter les CGV</label>
+
+        <input type="submit" value="Valider" />
+        <div></div>
+      </form>
+    </section>
+
+    <section class="chap5">
+      <h1>VIII. Les forEach</h1>
+      <p>
+        "querySelectorAll" permet de selectionner toutes les classes identiques
+        (variables) <br />
+        const boxes = document.querySelectorAll('.box'); boxes.forEach((box) =>
+        { box.addEventListener('click', (e) =>{ e.target.style.transform =
+        "scale(0.7)"; }); });
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

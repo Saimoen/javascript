@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "pseudo": "GreksO",
+      "message": "Yo les gens!",
+      "id": 1
+    },
+    {
+      "pseudo": "GreksO",
+      "message": "Termines le taffe!",
+      "id": 2
+    },
+    {
+      "pseudo": "GreksO",
+      "message": "Termines le taffe!",
+      "id": 3
+    }
+  ]
+}
